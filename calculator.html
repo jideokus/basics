@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <style>
+            .wrapper{
+                max-width: 400px;
+            }
+            .calc-row{
+                display:flex;
+                flex-direction: row;
+                margin-bottom:5px;
+                justify-content: center;
+            }
+            button.calc-number{
+                background: #fff;
+                border:1px solid #4a4a4a;
+                height: 50px;
+                width:50px;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                margin-right:10px;
+                border-radius:5px;
+                outline:0;
+                transition: 0.5s;
+            }
+            button.calc-number:hover{
+                box-shadow: 5px 5px 5px #eaeaea;
+            }
+            .output-container{
+                border-radius:5px;
+                height:50px;
+                width:100%;
+                border:1px solid #4a4a4a;
+                margin-bottom:10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>
+                Calculator is here
+            </h1>
+            <div class="calculator-container">
+                <div class="output-container">
+                    <div class="output-content" id="outputContent">
+                    </div>
+                </div>
+                <div class="calc-row">
+                    <div class="calc-col">
+                        <button class="calc-number" onclick="handleNumberPress(1)">1</button>
+                    </div>   
+                    <div class="calc-col">
+                        <button class="calc-number" onclick="handleNumberPress(2)">2</button>
+                    </div>
+                    <div class="calc-col">
+                        <button class="calc-number" onclick="handleNumberPress(3)">3</button>
+                    </div>
+                </div>
+                <div class="calc-row">
+                    <div class="calc-col">
+                        <button class="calc-number" onclick="handleNumberPress(4)">4</button>
+                    </div>   
+                    <div class="calc-col">
+                        <button class="calc-number" onclick="handleNumberPress(5)">5</button>
+                    </div>
+                    <div class="calc-col">
+                        <button class="calc-number" onclick="handleNumberPress(6)">6</button>
+                    </div>
+                </div>
+                <div class="calc-row">
+                    <div class="calc-col">
+                        <button class="calc-number" onclick="handleNumberPress(7)">7</button>
+                    </div>   
+                    <div class="calc-col">
+                        <button class="calc-number" onclick="handleNumberPress(8)">8</button>
+                    </div>
+                    <div class="calc-col">
+                        <button class="calc-number" onclick="handleNumberPress(9)">9</button>
+                    </div>
+                </div>
+                <div class="calc-row">
+                    <div class="calc-col">
+                        <button class="calc-number" onclick="handleNumberPress(0)">0</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>
